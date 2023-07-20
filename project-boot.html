@@ -25,11 +25,11 @@
     <!--first column-->
       <div class ="d-none d-sm-none d-md-block col-md-2 col-xl-2 sidebar">
         <ul class="list-group" id="sidebar-options">
-          <li class="list-group-item"><a href="#" class="text-decoration-none">Inbox</a></li>
-          <li class="list-group-item"><a href="#" class="text-decoration-none">Favorites</a></li>
-          <li class="list-group-item"><a href="#" class="text-decoration-none">Drafts</a></li>
-          <li class="list-group-item"><a href="#" class="text-decoration-none">Spam</a></li>
-          <li class="list-group-item"><a href="#" class="text-decoration-none">Sent</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none stretched-link">Inbox</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none stretched-link">Favorites</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none stretched-link">Drafts</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none stretched-link">Spam</a></li>
+          <li class="list-group-item"><a href="#" class="text-decoration-none stretched-link">Sent</a></li>
           <li><button class="btn btn-outline-success list-group-item" id="compose" type="submit">Compose</button></li>
         </ul>
 
@@ -41,7 +41,7 @@
           <div class="card col-md-12 emails">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-              <h6 class="card-title">Email_username       @Subject</h6>
+              <a class="stretched-link"><h6 class="card-title"><span>Email_username</span> <span>@Subject</span></h6></a>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -111,7 +111,7 @@
         </li>
     </div>
     <!--third column-->
-    <div class="d-none d-md-block col-md-5 col-xl-7 flex-direction-row email-read">
+    <div class="d-none d-sm-block  col-md-5 col-xl-7 flex-direction-row email-read">
       <div class="row d-flex flex-direction-row">
         <div class="d-flex flex-direction-row card col-md-12 email-big">
           <img src="..." class="card-img-top" alt="...">
@@ -121,7 +121,7 @@
           </div>
         </div>
             <!--reply box-->
-        <div class="col-md-12 mb-3 align-items-space-evenly reply-box">
+        <div class="col-md-12 align-items-space-evenly reply-box">
           <div class="row h-100 d-flex justify-content-space-evenly" id="reply-col">
             <div class="col-4">
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">

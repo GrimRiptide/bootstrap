@@ -80,6 +80,7 @@ h6{
 }
 .email-big{
     width:99%;
+    min-height:50%;
     height:50vh;
     margin:10px;
     border-radius:10px;
