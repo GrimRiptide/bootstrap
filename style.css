@@ -1,25 +1,55 @@
-@media (min-width: 576px) { 
-
- }
-
-@media (min-width: 768px) { 
-
+@media (max-width: 767px) { 
+    #card-box{
+        height:40vh;
+    }
+    #email-big{
+        max-height:20vh;
+    }
+    #contents{
+        min-height: 150px;
+    }
+    .reply-box{
+        height: 200px;
+    }
 }
-
-@media (min-width: 992px) { 
     
+@media (min-width: 768px) { 
+    #card-box{
+        height:95vh;
+    }
+    .email-read{
+        height:100%;
+    }
+    #email-big{
+        height:50vh;
+    }
+    #contents{
+        height:250px;
+    }     
+}
+    
+@media (min-width: 992px) { 
+
  }
 
 body{
     background-color:darkseagreen;
-    overflow:hidden;
-
+    Overflow:hidden;
 }
+
+.main-columns{
+    height:100%;
+    overflow:hidden;
+}
+
 .navbar{
     margin-left:0px;
     padding-top:0px;
     padding-left:0px;
-    width:100vw;
+    padding-right:0px;
+    padding-bottom:0px;
+    border-bottom:black 1px solid;
+
 }
 .sidebar{
     background-color:lightblue;
@@ -32,37 +62,47 @@ body{
     list-style: none;
     border-radius:10px;
 }
+
 .list-group-item{
     background-color:lightgreen;
     border: black 2px solid;
 }
+
 #compose{
     background-color:lightsalmon;
     border-top:none;
 }
-.main-columns{
-    height:100vh;
-}
-.card-box{
+
+#card-box{
 background-color:lightcyan;
-height:100vh;
-overflow-y:auto;
+
+overflow-y:scroll;
 }
-.email-read{
-    background-color:lightgray;
-    height:100%;
-}
+
 .card{
     height:100px;
     width: 200px;
     margin-top:10px;
 }
+
+.card-body{
+    background-color:lightgoldenrodyellow;
+}
+
+.card-big{
+    overflow-y:scroll;
+}
+
+.email-read{
+    background-color:lightgray;
+    height:100%;
+}
+
 h6{
     background-color:greenyellow;
 }
-.some{
-    height:50px;
-}
+
+
 .reply-box{
     height:30%;
     min-height:400px;
@@ -70,21 +110,38 @@ h6{
     background-color:lightblue;
     border:darkgray 5px solid;
 }
+
 #reply-col{
     margin:5px;
 }
+
 .emails{
     width:100%;
     overflow:hidden;
     border-radius:10px;
 }
-.email-big{
+
+.list-group-item:hover{
+    border:red 5px solid;
+}
+
+.list-group-item::selection{
+    border:purple 5pc solid;
+}
+
+#email-big{
     width:99%;
-    min-height:50%;
     height:50vh;
     margin:10px;
-    border-radius:10px;
+    padding:8px;
 }
-.card-body{
-    background-color:lightgoldenrodyellow;
+
+.card-text{
+    height:35px;
+    padding:0px;
+}
+
+#Im-ugly{
+    height:40px;
+    margin:5px;
 }
