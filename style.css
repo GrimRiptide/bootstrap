@@ -109,6 +109,7 @@ h6{
     min-width:500px;
     background-color:lightblue;
     border:darkgray 5px solid;
+    padding:10px;
 }
 
 #reply-col{
